@@ -125,7 +125,7 @@ section {
 
     @media screen and (max-width: 1007px) and (min-width: 641px) {
       position: absolute;
-      right: 10%;
+      right: 6%;
       top: 19%;
     }
 

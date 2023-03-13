@@ -1,6 +1,7 @@
 <template>
   <pv-nav-bar />
   <pv-banner />
+  <pv-impact />
   <div class="teste-app">
     <h1>adsdasd asd asd as</h1>
     <h1>
@@ -37,6 +38,7 @@
 
 <script>
 import PvBanner from "./components/PvBanner.vue";
+import PvImpact from "./components/PvImpact.vue";
 import PvNavBar from "./components/PvNavBar.vue";
 
 export default {
@@ -44,6 +46,7 @@ export default {
   components: {
     PvNavBar,
     PvBanner,
+    PvImpact,
   },
 };
 </script>
