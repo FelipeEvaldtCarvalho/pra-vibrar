@@ -1,7 +1,7 @@
 <template>
   <transition>
     <nav v-show="!navbarHidden">
-      <img src="../assets/logo.png" alt="logo" height="120" />
+      <img src="../assets/logo.png" alt="logo" height="70" />
       <ul>
         <li>
           <a href=""><ion-icon name="location"></ion-icon></a>
@@ -36,10 +36,10 @@ export default {
       console.log(window.innerWidth);
       if (window.innerWidth > 640) {
         if (window.pageYOffset < 50) {
-          document.querySelector("img").height = 120;
+          document.querySelector("img").height = 70;
           console.log(document.querySelector("img"));
         } else {
-          document.querySelector("img").height = 70;
+          document.querySelector("img").height = 40;
         }
       }
 
@@ -58,14 +58,15 @@ export default {
 
 <style scoped lang="scss">
 nav {
+  z-index: 2;
   position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 6rem;
+  padding: 1.5rem 6rem;
   background-color: #000;
-  border-bottom: 1px #fff solid;
+  border-bottom: 1px #6b6b6b solid;
 
   @media screen and (max-width: 640px) {
     padding: 1rem 2em;
@@ -76,7 +77,7 @@ nav {
     transition: all 0.6s ease;
 
     @media screen and (max-width: 640px) {
-      height: 60px;
+      height: 40px;
     }
   }
 
@@ -89,6 +90,13 @@ nav {
 
     a {
       color: #fff;
+
+      ion-icon {
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
   }
 }
