@@ -28,15 +28,17 @@ section {
   display: flex;
   align-items: center;
   padding-top: 110px;
-  padding-bottom: 3rem;
+  padding-bottom: 3.3vw;
   @media screen and (max-width: 1007px) and (min-width: 641px) {
     min-height: initial;
+    padding-bottom: 9vw;
     flex-direction: column;
   }
   @media screen and (max-width: 640px) {
     min-height: 100vh;
     flex-direction: column-reverse;
     padding-top: 80px;
+    padding-bottom: 20vw;
   }
 
   .banner-text {
@@ -126,7 +128,7 @@ section {
     @media screen and (max-width: 1007px) and (min-width: 641px) {
       position: absolute;
       right: 6%;
-      top: 19%;
+      top: 20%;
     }
 
     @media screen and (max-width: 640px) {

@@ -2,6 +2,7 @@
   <pv-nav-bar />
   <pv-banner />
   <pv-impact />
+  <pv-category />
   <div class="teste-app">
     <h1>adsdasd asd asd as</h1>
     <h1>
@@ -38,6 +39,7 @@
 
 <script>
 import PvBanner from "./components/PvBanner.vue";
+import PvCategory from "./components/PvCategory.vue";
 import PvImpact from "./components/PvImpact.vue";
 import PvNavBar from "./components/PvNavBar.vue";
 
@@ -47,6 +49,7 @@ export default {
     PvNavBar,
     PvBanner,
     PvImpact,
+    PvCategory,
   },
 };
 </script>
@@ -69,7 +72,7 @@ export default {
   background-color: #000;
 }
 .c-gray {
-  color: #9c9c9c;
+  color: #c6c6c6;
 }
 .c-white {
   color: #fff;

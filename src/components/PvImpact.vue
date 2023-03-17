@@ -21,10 +21,10 @@ export default {
   display: flex;
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 75vh;
 
   @media screen and (max-width: 640px) {
-    height: 70vh;
+    height: 50vh;
   }
 
   img {
