@@ -98,7 +98,7 @@ section {
       }
 
       @media screen and (max-width: 640px) {
-        font-size: 4.5vw;
+        font-size: 4.8vw;
         margin-bottom: 10vw;
       }
     }
@@ -112,8 +112,10 @@ section {
       margin-bottom: 5vw;
 
       @media screen and (max-width: 640px) {
-        width: 60vw;
-        margin-bottom: 10vw;
+        flex-direction: column;
+        gap: 5vw;
+        width: 75vw;
+        margin: 0 0;
       }
 
       ion-icon {
@@ -128,7 +130,7 @@ section {
         text-align: center;
 
         @media screen and (max-width: 640px) {
-          font-size: 3vw;
+          font-size: 4vw;
         }
       }
     }
@@ -152,6 +154,8 @@ section {
       }
 
       @media screen and (max-width: 640px) {
+        position: relative;
+        top: 15vw;
         padding: 2vw 0;
         font-size: 2.5vw;
         width: 40vw;

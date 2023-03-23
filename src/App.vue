@@ -4,11 +4,13 @@
   <pv-impact />
   <pv-category />
   <pv-location />
+  <pv-footer />
 </template>
 
 <script>
 import PvBanner from "./components/PvBanner.vue";
 import PvCategory from "./components/PvCategory.vue";
+import PvFooter from "./components/PvFooter.vue";
 import PvImpact from "./components/PvImpact.vue";
 import PvLocation from "./components/PvLocation.vue";
 import PvNavBar from "./components/PvNavBar.vue";
@@ -21,6 +23,7 @@ export default {
     PvImpact,
     PvCategory,
     PvLocation,
+    PvFooter,
   },
 };
 </script>
