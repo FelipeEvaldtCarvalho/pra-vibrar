@@ -25,6 +25,12 @@ export default {
   background-size: cover;
   filter: saturate(0);
 
+  @media screen and (max-width: 1007px) and (min-width: 641px) {
+    height: 20vh;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+
   @media screen and (max-width: 640px) {
     height: 50vh;
   }
