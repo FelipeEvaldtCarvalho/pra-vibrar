@@ -1,12 +1,13 @@
 <template>
   <section>
     <div class="banner-text">
-      <h1>AQUI O PRAZER <span class="c-red">VIBRA</span> EM CADA DETALHE</h1>
-      <h2 class="c-gray">Desconstrua padrões</h2>
-      <h2 class="c-gray">Liberte seus <span class="c-white">fetiches</span></h2>
-      <h2 class="c-gray">Explore o <span class="c-white">prazer</span></h2>
-      <h2 class="c-gray">Saia da rotina</h2>
-      <a class="btn bg-red" href="">D E S C U B R A</a>
+      <h1>SINTA ESTÁ VIBRAÇÃO</h1>
+      <h2 class="c-gray">
+        Aqui na <span class="c-white">Pra Vibrar</span>, provocamos nosso
+        público a explorar suas fantasias de uma forma livre e desconstruída.
+        Vibração é energia e nós trabalhamos pra te ver
+        <span class="c-white">VIBRAR!</span>
+      </h2>
     </div>
     <div class="banner-img">
       <img src="../assets/bannerBg.png" alt="" />
@@ -30,8 +31,10 @@ section {
   padding-top: 110px;
   padding-bottom: 3.3vw;
   @media screen and (max-width: 1007px) and (min-width: 641px) {
+    height: auto;
     min-height: initial;
-    padding-bottom: 9vw;
+    padding-top: 150px;
+    margin-bottom: -20vw;
     flex-direction: column;
   }
   @media screen and (max-width: 640px) {
@@ -51,6 +54,7 @@ section {
 
     @media screen and (max-width: 1007px) and (min-width: 641px) {
       width: 100%;
+      padding: 0 6.94vw;
       padding-top: 1rem;
     }
 
@@ -66,7 +70,7 @@ section {
       margin-bottom: 2.5vw;
 
       @media screen and (max-width: 1007px) and (min-width: 641px) {
-        font-size: 5.86vw;
+        font-size: 5vw;
         line-height: 7vw;
       }
 
@@ -74,6 +78,7 @@ section {
         font-size: 9vw;
         line-height: 12vw;
         margin-bottom: 5.5vw;
+        text-align: center;
       }
     }
 
@@ -83,6 +88,7 @@ section {
       line-height: 2.6vw;
 
       @media screen and (max-width: 1007px) and (min-width: 641px) {
+        max-width: 60%;
         font-size: 2.5vw;
         line-height: 3.4vw;
       }
@@ -90,31 +96,7 @@ section {
       @media screen and (max-width: 640px) {
         font-size: 6vw;
         line-height: 8vw;
-      }
-    }
-
-    .btn {
-      margin-top: 5.2vw;
-      text-decoration: none;
-      padding: 0.83vw 0;
-      width: 16.66vw;
-      border: none;
-      letter-spacing: 20%;
-      font-size: 0.97vw;
-      font-weight: 700;
-      text-align: center;
-
-      @media screen and (max-width: 1007px) and (min-width: 641px) {
-        padding: 1vw 0;
-        width: 18.66vw;
-        font-size: 1.2vw;
-      }
-
-      @media screen and (max-width: 640px) {
-        padding: 2vw 0;
-        width: 100%;
-        font-size: 3.5vw;
-        margin-top: 12vw;
+        text-align: center;
       }
     }
   }
@@ -126,9 +108,10 @@ section {
     z-index: 0;
 
     @media screen and (max-width: 1007px) and (min-width: 641px) {
-      position: absolute;
-      right: 6%;
-      top: 20%;
+      width: 100%;
+      position: relative;
+      justify-content: flex-end;
+      top: -20vw;
     }
 
     @media screen and (max-width: 640px) {
