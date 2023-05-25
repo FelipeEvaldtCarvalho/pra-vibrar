@@ -10,9 +10,6 @@
         <h2 class="c-gray">{{ item.text }}</h2>
         <a :class="item.btnClass" href="">{{ item.btn }}</a>
       </div>
-      <div :class="`img-${item.class}`">
-        <img :src="require(`@/assets/${item.img}`)" :alt="item.title" />
-      </div>
     </div>
   </section>
 </template>

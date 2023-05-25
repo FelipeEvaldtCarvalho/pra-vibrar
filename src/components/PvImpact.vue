@@ -1,53 +1,58 @@
 <template>
   <section class="impact">
-    <img src="../assets/impact2.png" alt="" />
-    <h1>VIBRE MAIS ALTO</h1>
+    <a class="btn bg-white c-black" href="">LOJA VIRTUAL</a>
   </section>
 </template>
 
 <script>
 export default {
   name: "PvImpact",
-  computed: {
-    mobile() {
-      return window.innerWidth <= 640;
-    },
-  },
 };
 </script>
 
 <style lang="scss" scoped>
 .impact {
   display: flex;
-  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 10vh;
+  align-items: center;
   width: 100%;
   height: 75vh;
+  background-image: url("../assets/impact2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(0);
 
   @media screen and (max-width: 640px) {
     height: 50vh;
   }
 
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 4.86vw;
-    transform: translate(0, -50%);
+  a {
+    letter-spacing: 0.2vw;
 
     @media screen and (max-width: 1007px) and (min-width: 641px) {
-      font-size: 5.86vw;
+      letter-spacing: 0.4vw;
     }
 
     @media screen and (max-width: 640px) {
       font-size: 9vw;
     }
+  }
+  .btn {
+    height: 40px;
+    text-decoration: none;
+    padding: 12px 0;
+    width: 260px;
+    border: none;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 1);
+    letter-spacing: 20%;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
   }
 }
 </style>
